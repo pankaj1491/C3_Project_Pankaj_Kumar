@@ -67,11 +67,5 @@ public class Restaurant {
         return name;
     }
 
-    public double getTotOrderValue(List<String> allitems){
-        double OrderValue = 0.0;
-        for (String item : allitems){
-            OrderValue += findItemByName(item).getPrice();
-        }
-        return  OrderValue;
-    }
+
 }
